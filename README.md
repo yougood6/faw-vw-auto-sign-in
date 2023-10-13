@@ -18,7 +18,8 @@
 > <img src=".\img\Stream.png" width="50%"/>
 > 
 > 开始抓包后去小程序随意操作一下，然后查看抓包历史》按域名排序》找到one-app-h5.faw-vw.com》找到第一个post的请求
-> ![](.\img\history.png) ![](.\img\history_list.png) ![](.\img\history_detail.png)
+> 
+> ![](./img/history.png) ![](./img/history_list.png) ![](./img/history_detail.png)
 > 
 > 复制请求头中的token 要带Bearer
 
@@ -29,4 +30,4 @@
 3.  将 一汽大众.js 放到 脚本管理的更目录中
 4.  创建定时任务，可以试运行一下，能看到累计登录天数就是正确的
 
-> ![](.\img\history.png)
+> ![](./img/history.png)
