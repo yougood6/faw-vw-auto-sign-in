@@ -19,7 +19,7 @@
 > 
 > 开始抓包后去小程序随意操作一下，然后查看抓包历史》按域名排序》找到one-app-h5.faw-vw.com》找到第一个post的请求
 > 
-> <img src="./img/history.png" width="33%"/> <img src="./img/history_list.png" width="33%"/> <img src="./img/history_detail.png" width="33%"/>
+> <img src="./img/history.png" width="3%"/> <img src="./img/history_list.png" width="30%"/> <img src="./img/history_detail.png" width="30%"/>
 > 
 > 复制请求头中的token 要带Bearer
 
