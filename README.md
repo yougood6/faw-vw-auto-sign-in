@@ -3,38 +3,30 @@
 #### 介绍
 青龙面板，一汽大众自动签到脚本
 
+![签到记录](.\img\签到记录.jpg)
+
 #### 软件架构
 运行环境为青龙面板，也可自行修改在node环境运行
 
 
-#### 安装教程
-
-1.  安装青龙面板
-2.  打开面板，创建环境变量
-
-> key：yqdz_data      |   value：自行抓包获取（看下方使用说明），
-
-3.  xxxx
-
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  获取token
+> 我这使用的是ios设备，抓取微信小程序《一汽大众》的token
+> 
+> App:Stream
+> <img src=".\img\Stream.png" width="50%"/>
+> 
+> 开始抓包后去小程序随意操作一下，然后查看抓包历史》按域名排序》找到one-app-h5.faw-vw.com》找到第一个post的请求
+> ![](.\img\history.png) ![](.\img\history_list.png) ![](.\img\history_detail.png)
+> 
+> 复制请求头中的token 要带Bearer
 
-#### 参与贡献
+2.  打开面板，创建环境变量
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+> key：yqdz_data      |   value：自行抓包获取token
 
+3.  将 一汽大众.js 放到 脚本管理的更目录中
+4.  创建定时任务，可以试运行一下，能看到累计登录天数就是正确的
 
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+> ![](.\img\history.png)
