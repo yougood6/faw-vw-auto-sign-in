@@ -139,13 +139,20 @@ function start(token){
     let options = {
         url: 'https://one-app-h5.faw-vw.com/prod-api/mobile/one-app'+path+'?'+query,
         headers: {
-            'Content-Type':'application/json',
-            'Authorization':token
-            ,'system-version':'16.6'
-            ,'rh-version':'3.29.0'
-            ,'x-microservice-name':'api-gateway'
-            ,'platform':'ios'
-            ,'x-namespace-code':'production'
+            "Host":"one-app-h5.faw-vw.com",
+            "Connection":"keep-alive",
+            "Content-Length":"147",
+            "Did":"VW_WECHAT_iPhone 14 Pro<iPhone15,2>_12345678912345678900_iOS 16.6_v1.23.0",
+            "content-type":"application/json",
+            "x-mp-name":"SERVER",
+            "x-microservice-name":"api-gateway",
+            "Authorization":token,
+            "bodySign":"111b4e07bc91b24267b4dc698955e37bc4b683f9995db56262567b9913976606",
+            "x-namespace-code":"production",
+            "anonymous-id":"MINIAPPSERVER_",
+            "Accept-Encoding":"gzip,compress,br,deflate",
+            "User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.42(0x18002a2b) NetType/WIFI Language/zh_CN",
+            "Referer":"https://servicewechat.com/wx684fc81ee38e543e/56/page-frame.html",
         }
     }
 
